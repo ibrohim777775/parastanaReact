@@ -5,6 +5,7 @@ import MainPresent from '../Components/MainPresent';
 import MenuList from '../Components/MenuList';
 import Pagination from '../Components/Pagination';
 import '../Style/containers/main.css'
+import AboutProduct from './AboutProduct';
 import Delivery from './Delivery';
 import Payment from './Payment';
 import Support from './Support';
@@ -48,6 +49,7 @@ class Main extends Component {
         <Delivery />
         <Payment />
         <Support />
+        <AboutProduct />
       </div>
     );
   }
