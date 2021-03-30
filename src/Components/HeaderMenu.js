@@ -14,11 +14,10 @@ class HeaderMenu extends Component {
           <ul className='header__inner'>
             {
               this.props.headerItems.map((item, index) => (
-                <>
-                  <li key={index} className='header__links'>
-                    <a className='header_links-item' href='#'>{item}</a>
-                  </li>
-                </>
+
+                <li key={index} className='header__links'>
+                  <a className='header_links-item' href='#'>{item}</a>
+                </li>
               ))
             }
           </ul>

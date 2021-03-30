@@ -1,0 +1,17 @@
+button{
+  background-color: var(--green);
+  color: var(--white);
+  font-weight: var(--btn-font-weight);
+  font-family: var(--font-norms);
+  border:none;
+  outline:none;
+  border-radius: var(--bor-radius);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button:checked{
+  outline: none;
+  border:none
+}

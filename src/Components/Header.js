@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BiPhone, BiUser } from 'react-icons/bi';
 import { FiShoppingCart } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import HeaderMenu from '../Components/HeaderMenu';
 import Logo from '../Components/Logo';
 import Burger from '../images/Burger.svg';

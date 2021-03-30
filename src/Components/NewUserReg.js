@@ -7,12 +7,20 @@ import '../Style/NewUserReg.css'
 class NewUserReg extends Component {
   constructor(props) {
     super(props);
-
+    this.state = {
+      isShow: true
+    }
   }
+
+  circleHandler = (e) => {
+    // this.state.circleStyle === '' ? this.setState({ circleStyle: style }) : this.setState({ circleStyle: '' });
+    this.setState((prevState) => ({ ...prevState, isShow: !prevState.isShow }))
+    console.log(this.state.isShow);
+  }
+
 
   render() {
     let { newUserDisp, circleStyle } = this.props;
-    console.log(circleStyle);
     return (
       <div className='user__auth-body' style={{ display: newUserDisp }}>
         <div className='user__auth'>
@@ -34,11 +42,11 @@ class NewUserReg extends Component {
             </div>
             <div className='info__items'>
               <div className='info__toEmail'>
-                <div onClick={() => this.props.circleHandler()} className='circle'></div>
+                <div onClick={() => this.circleHandler()} className={this.state.isShow ? 'circle' : 'circle circle--bg'}></div>
                 <p className='toEmail__text'>Хочу получать выгодные предложения от магазина</p>
               </div>
               <div className='info__toEmail second'>
-                <div onClick={() => this.props.circleHandler()} style={{ circleStyle }} className='circle'></div>
+                <div onClick={() => this.circleHandler()} style={{ circleStyle }} className='circle'></div>
                 <p className='toEmail__text'>Принимаю условия Пользовательского соглашения,<br></br><a href='#'> Политики конфиденциальности</a></p>
               </div>
             </div>

@@ -40,3 +40,6 @@ input{
 .login__btn{
   margin-top: 22px;
 }
+.circle--bg{
+  background: #000;
+}
